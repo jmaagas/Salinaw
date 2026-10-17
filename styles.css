@@ -1,0 +1,164 @@
+@import 'tailwindcss' source('../');
+
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+  @apply m-0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --font-body: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --font-heading: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-interface: 'Inter Tight', ui-sans-serif, system-ui, sans-serif;
+  --content-width: 76rem;
+  --reading-width: 38rem;
+
+  /* Salinaw palette: soft light blue (mist), slate-teal ink, apricot and lilac accents */
+  --paper: oklch(0.977 0.01 235);
+  --mist: oklch(0.91 0.04 232);
+  --mist-deep: oklch(0.79 0.065 235);
+  --teal: oklch(0.5 0.065 200);
+  --apricot: oklch(0.88 0.065 62);
+  --apricot-deep: oklch(0.72 0.1 55);
+  --lilac: oklch(0.88 0.035 300);
+  --lilac-deep: oklch(0.62 0.06 300);
+  --ink: oklch(0.29 0.03 210);
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: oklch(0.993 0.005 235);
+  --card-foreground: var(--ink);
+  --popover: oklch(0.993 0.005 235);
+  --popover-foreground: var(--ink);
+  --primary: var(--teal);
+  --primary-foreground: oklch(0.98 0.01 235);
+  --secondary: var(--mist);
+  --secondary-foreground: var(--ink);
+  --muted: oklch(0.945 0.016 235);
+  --muted-foreground: oklch(0.47 0.03 210);
+  --accent: var(--apricot);
+  --accent-foreground: var(--ink);
+  --destructive: oklch(0.55 0.15 30);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.885 0.025 235);
+  --input: oklch(0.865 0.025 235);
+  --ring: oklch(0.6 0.07 200);
+  --radius: 0.875rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+  --font-ui: var(--font-interface);
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-mist-deep: var(--mist-deep);
+  --color-teal: var(--teal);
+  --color-apricot: var(--apricot);
+  --color-apricot-deep: var(--apricot-deep);
+  --color-lilac: var(--lilac);
+  --color-lilac-deep: var(--lilac-deep);
+  --color-ink: var(--ink);
+  --container-content: var(--content-width);
+  --container-reading: var(--reading-width);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    font-optical-sizing: auto;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--apricot);
+    color: var(--ink);
+  }
+}
+
+/* A soft, seamless wash used behind section transitions */
+.wash-mist {
+  background: linear-gradient(180deg, var(--paper) 0%, var(--mist) 45%, var(--paper) 100%);
+}
+.wash-lilac {
+  background: linear-gradient(180deg, var(--paper) 0%, var(--lilac) 50%, var(--paper) 100%);
+}
+.wash-apricot {
+  background: linear-gradient(180deg, var(--paper) 0%, var(--apricot) 50%, var(--paper) 100%);
+}
+
+.prose-salinaw {
+  font-family: var(--font-body);
+  font-size: 1.16rem;
+  line-height: 1.75;
+}
+@media (min-width: 640px) {
+  .prose-salinaw {
+    font-size: 1.28rem;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 900ms ease,
+    transform 900ms ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
