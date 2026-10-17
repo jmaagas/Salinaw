@@ -1,5 +1,5 @@
 ---
-name: netlify-identity-tanstack-start
+name: tanstack-start-identity
 description: Upgrade a stock TanStack Start project to use Netlify Identity for authentication via the @netlify/identity package. Use this skill whenever the user wants to add Netlify Identity auth to a TanStack Start app, integrate login/signup into TanStack Start, protect routes or server functions with Netlify Identity, add role-based access control, or wire up Netlify Identity webhooks. Also use when the user mentions '@netlify/identity', 'nf_jwt', or asks about auth for TanStack Start on Netlify. Covers SSR pages, SPA pages, API routes, server functions, middleware, route guards, role-based access, identity webhooks, and client-side auth state.
 ---
 
