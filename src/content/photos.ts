@@ -129,6 +129,6 @@ export const illustrations = {
 
 export type IllustrationKey = keyof typeof illustrations
 
-export function cdn(src: string, width: number) {
-  return `/.netlify/images?url=${encodeURIComponent(src)}&w=${width}&fm=webp`
+export function cdn(src: string, _width: number) {
+  return src
 }

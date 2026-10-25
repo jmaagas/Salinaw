@@ -8,8 +8,8 @@ const config = defineConfig({
   resolve: { tsconfigPaths: true },
   plugins: [
     tailwindcss(),
-    cloudflare({ viteEnvironment: { name: 'ssr' } }),
     tanstackStart(),
+    cloudflare({ viteEnvironment: { name: 'ssr' } }),
     viteReact(),
   ],
 })

@@ -1,0 +1,10 @@
+﻿node_modules/
+dist/
+.wrangler/
+.netlify/
+.env
+.env.*
+!.env.example
+!.env.*.example
+.tanstack/
+src/routeTree.gen.ts
