@@ -1,6 +1,7 @@
 {
   "name": "salinaw-emagazine",
   "private": true,
+  "packageManager": "pnpm@12.14.0",
   "type": "module",
   "scripts": {
     "dev": "vite dev --port 3000",
