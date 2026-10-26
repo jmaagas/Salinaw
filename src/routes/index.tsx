@@ -21,7 +21,7 @@ function Home() {
         <div className="mx-auto grid max-w-content gap-10 px-4 pt-12 pb-16 sm:px-6 lg:grid-cols-[1fr_1.15fr] lg:items-end lg:pt-20">
           <div>
             <p className="font-ui text-xs tracking-[0.3em] text-muted-foreground uppercase">
-              Salinaw · Issue 01
+              Salinaw · 1st Issue · Oct. 16, 2026
             </p>
             <h1 className="mt-6 font-display text-6xl leading-[0.95] font-light tracking-tight sm:text-7xl lg:text-8xl">
               Unfinished <em className="font-normal text-teal">Business</em>
@@ -59,7 +59,7 @@ function Home() {
         <div className="mx-auto max-w-reading px-4 prose-salinaw sm:px-0">
           <p className="mb-8">
             This issue is about a handful of questions. They were first asked
-            in the 1880s — in novels, in letters, in a small newspaper printed
+            in the 1880s — in novels, letters, a small newspaper printed
             far from home — by people who were young, restless, and tired of
             being told to wait.
           </p>
@@ -82,9 +82,9 @@ function Home() {
             </p>
           </Reveal>
           <p>
-            You won’t find a biography here, or a list of dates to memorize.
-            Each piece starts with something you might see this week, and lets
-            the older story sit quietly beside it. Read slowly. There is room in
+            You won't find a biography here or a list of dates to memorize.
+            Each piece starts with something you might see this week and lets
+            the older story sit quietly beside it. Read slowly, as there is room in
             the margins.
           </p>
         </div>
@@ -103,7 +103,7 @@ function Home() {
             In this issue
           </h2>
           <p className="font-ui text-sm text-muted-foreground">
-            Five essays · about half an hour, if you don’t rush
+            Five essays · Expected reading time: 10-20 minutes
           </p>
         </div>
 
@@ -166,7 +166,7 @@ function Home() {
               The field guide
             </p>
             <h2 className="mt-5 font-display text-4xl leading-tight font-light sm:text-5xl">
-              You don’t have to die for your country.
+              You don't have to die for your country.
               <span className="block text-teal italic">
                 You do have to live in it.
               </span>
@@ -200,22 +200,25 @@ function Home() {
               id="missing"
               className="mt-5 mb-10 font-display text-4xl font-light sm:text-5xl"
             >
-              On who’s missing from these pages
+              On who's missing from these pages:
             </h2>
             <p className="mb-8">
               You may notice that this issue rarely says his name. That was
-              deliberate.
+              intentional.
             </p>
             <p className="mb-8">
               Statues are easy to admire and easier to ignore. A man on a
-              pedestal asks nothing of you. But the ideas he argued for — that
-              schooling should free people rather than sort them; that power
-              should answer to those it governs; that indifference is learned
-              and can be unlearned — were never his alone, and they were never
+              pedestal asks nothing of you.
+            </p>
+            <p className="mb-8">
+              But the ideas he argued for — that schooling should free people
+              rather than sort them; that power should answer to those it governs;
+              that indifference is learned and can be unlearned —
+              were never his alone, and they were never
               meant to be admired from a distance.
             </p>
             <p>
-              So here is his photograph, once, so you know whose questions we
+              So here is his photograph, so you know whose questions we
               borrowed. Then set it aside.{' '}
               <em>The questions are yours now.</em>
             </p>

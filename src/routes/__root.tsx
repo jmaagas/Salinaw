@@ -8,9 +8,9 @@ import { Colophon } from '@/components/magazine/colophon'
 
 import '../styles.css'
 
-const siteName = 'Salinaw — Unfinished Business'
+const siteName = 'Salinaw — Looking Back For Clarity'
 const siteDescription =
-  'A slow-reading e-magazine about ideas on education, civic duty, and love of country that outlived their century — and what to do with them now.'
+  'The e-magazine that revisits questions from the country, asked by older times, with or without the notable figures behind them.'
 
 export const Route = createRootRoute({
   head: () => ({

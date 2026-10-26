@@ -1,4 +1,4 @@
-# Salinaw — Issue 01: *Unfinished Business*
+# Salinaw — 1st Issue: *Unfinished Business*
 
 A slow-reading e-magazine about the ideas Rizal argued for: education that frees people instead of sorting them, power that has to answer to the people it governs, indifference as something learned (so it can be unlearned), honest memory, and love for a country you may have had to leave. The magazine is about the ideas, not the man. His life only shows up as subtext, set quietly beside scenes from the Philippines today, and every essay ends with small civic actions a reader can actually take.
 

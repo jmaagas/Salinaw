@@ -7,8 +7,8 @@ export function Colophon() {
         <div className="space-y-3">
           <p className="font-display text-3xl font-semibold">Salinaw</p>
           <p className="max-w-md text-lg text-muted-foreground">
-            <em>Salinaw</em> joins <em>sali</em>, to take part, and{' '}
-            <em>linaw</em>, clarity. This magazine is about ideas worth seeing
+            <em>Salinaw</em> joins <em>sali</em> ("to take part") and{' '}
+            <em>linaw</em> ("clarity"). This magazine is about ideas worth seeing
             clearly and joining in on — not the people who are remembered for
             them.
           </p>
@@ -37,7 +37,8 @@ export function Colophon() {
       </div>
       <p className="mx-auto max-w-content px-4 pb-10 font-ui text-xs text-muted-foreground sm:px-6">
         Archival photographs are public domain, via Wikimedia Commons, and
-        credited inside each image. Illustrations were made for this issue.
+        credited inside each image. Illustrations were made for this issue
+        by anonymous artists.
       </p>
     </footer>
   )

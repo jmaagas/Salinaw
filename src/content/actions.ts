@@ -24,7 +24,7 @@ export const actionGroups: ActionGroup[] = [
         title: 'Ask for the official receipt',
         detail:
           'Every fee, every office, every time. It is the smallest possible audit, and it is yours to request.',
-        echoes: 'the-window',
+        echoes: 'the-queue',
       },
       {
         id: 'ten-minutes',
@@ -66,7 +66,7 @@ export const actionGroups: ActionGroup[] = [
         title: 'File a Freedom of Information request',
         detail:
           'Executive agencies accept requests at foi.gov.ph. Ask how something near you was funded, and see what comes back.',
-        echoes: 'the-window',
+        echoes: 'the-queue',
       },
       {
         id: 'register',
@@ -115,7 +115,7 @@ export const actionGroups: ActionGroup[] = [
         title: 'Volunteer as a poll watcher',
         detail:
           'Accredited citizens’ groups train volunteers before every election. A watched count is a more honest count.',
-        echoes: 'the-window',
+        echoes: 'the-queue',
       },
       {
         id: 'hometown',

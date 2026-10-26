@@ -2,7 +2,7 @@
 
 ## Project
 
-**Salinaw**, a slow-reading e-magazine (Issue 01: *Unfinished Business*) about the ideals Rizal held and why they still apply to the Philippines today. It's built with TanStack Start, React 19, and Tailwind 4, deployed on Netlify. There's no backend. Reader state (margins, field-guide checklist) is stored in `localStorage` and read only inside `useEffect`.
+**Salinaw**, a slow-reading e-magazine (1st Issue: *Unfinished Business*) about the ideals Rizal held and why they still apply to the Philippines today. It's built with TanStack Start, React 19, and Tailwind 4, deployed on Netlify. There's no backend. Reader state (margins, field-guide checklist) is stored in `localStorage` and read only inside `useEffect`.
 
 ## Editorial rules (do not break these)
 

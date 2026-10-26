@@ -18,7 +18,7 @@ export function Masthead() {
             Salinaw
           </span>
           <span className="hidden font-ui text-xs text-muted-foreground sm:inline">
-            Issue 01 · Unfinished Business
+            Looking Back For Clarity
           </span>
         </Link>
         <nav aria-label="Main" className="flex items-center gap-1 font-ui text-sm">
